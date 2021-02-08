@@ -22,12 +22,6 @@ server.on('request', (req, res) => {
           res.end('Server error');
         }
       });
-      stream.on('close', (() => {
-        console.log('close');
-      }));
-      stream.on('open', (() => {
-        console.log('open');
-      }));
       req.on('aborted', () => {
         stream.destroy();
       });
