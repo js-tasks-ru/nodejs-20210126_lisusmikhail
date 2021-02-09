@@ -5,7 +5,8 @@
   "scripts": {
     "test": "cross-env NODE_ENV=test mocha --no-warnings --reporter=reporter.js --ignore=node_modules/** **/*.test.js",
     "test:local": "cross-env NODE_ENV=test node --no-warnings local.js",
-    "lint": "eslint --ignore-pattern 'public' --ignore-pattern '*.test.js' --ignore-pattern 'client' ."
+    "lint": "eslint --ignore-pattern 'public' --ignore-pattern '*.test.js' --ignore-pattern 'client' .",
+    "dev": "nodemon 05-http-server-streams/02-file-server-post/index.js"
   },
   "keywords": [],
   "author": "Sergey Zelenov",
@@ -43,6 +44,7 @@
     "nodemailer-html-to-text": "^3.0.0",
     "nodemailer-smtp-transport": "^2.7.4",
     "nodemailer-stub-transport": "^1.1.0",
+    "nodemon": "^2.0.7",
     "passport-facebook": "^3.0.0",
     "passport-github": "^1.1.0",
     "passport-local": "^1.0.0",
