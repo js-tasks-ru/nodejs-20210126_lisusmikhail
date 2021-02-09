@@ -11,7 +11,6 @@ class LimitSizeStream extends stream.Transform {
   }
 
   _transform(chunk, encoding, callback) {
-    console.log(chunk);
     if (this.isObjectMode) {
       this.size += 1;
     } else {
