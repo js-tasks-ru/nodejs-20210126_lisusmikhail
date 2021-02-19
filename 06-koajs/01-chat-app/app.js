@@ -9,9 +9,11 @@ const Router = require('koa-router');
 const router = new Router();
 
 router.get('/subscribe', async (ctx, next) => {
+  console.log('Subscribe', ctx.response);
 });
 
 router.post('/publish', async (ctx, next) => {
+  console.log('Publishing', ctx.request.body, ctx.body);
 });
 
 app.use(router.routes());
